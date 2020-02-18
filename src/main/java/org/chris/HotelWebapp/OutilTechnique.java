@@ -17,17 +17,17 @@ public class OutilTechnique {
 	
 static WebDriver driver ;
 	
-	static WebDriver choisirNavigateur(String nav) {
+	static WebDriver choisirNavigateur(ENavigateur nav) {
 		switch(nav) {
-		case "firefox":
+		case firefox:
 			System.setProperty("webdriver.gecko.driver", "src/test/resources/geckodriver.exe") ;
 			driver = new FirefoxDriver() ;
 			return driver;
-		case "chrome":
+		case chrome:
 			System.setProperty("webdriver.chrome.driver", "src/test/resources/chromedriver.exe");
 			driver = new ChromeDriver();
 			return driver;
-		case "ie":
+		case ie:
 			System.setProperty("webdriver.ie.driver", "src/test/resources/IEDriverServer.exe");
 			driver = new InternetExplorerDriver();
 			return driver;

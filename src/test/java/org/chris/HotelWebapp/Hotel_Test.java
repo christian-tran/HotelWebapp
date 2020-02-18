@@ -17,7 +17,7 @@ public class Hotel_Test {
 	
 	@Before
 	public void setup() {
-		driver = OutilTechnique.choisirNavigateur("chrome");
+		driver = OutilTechnique.choisirNavigateur(ENavigateur.chrome);
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 	}
 	
