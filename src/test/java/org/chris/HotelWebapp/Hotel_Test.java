@@ -29,7 +29,7 @@ public class Hotel_Test {
 	
 	@Test
 	public void test() {
-		driver.get("http://192.168.102.209:9999/HotelWebapp/");
+		driver.get("http://192.168.102.70:9999/HotelWebapp/");
 		driver.manage().window().maximize();
 		
 		PageHotel page_hotel = PageFactory.initElements(driver, PageHotel.class);
